@@ -1,16 +1,19 @@
 
 <!-- User NOT logged in -->
 <div *ngIf="!auth.currentUser">
-  <h3>Hell, {{ auth.currentUserDisplayName }}</h3>
-  <p>Login to get started...</p>
+  <br/>
+  <h2>Hello, Student/Teacher</h2>
+  <p style="color:darkblue"><b>Enter in to Smart Learning App</b> </p>
+  <br/>
   <br/>
 </div>
 
 <!-- User logged in -->
 <div *ngIf="auth.currentUser">
-  <h3>Hello, {{ auth.currentUser.displayName }}</h3>
-  <h3>Welcot Learning App</h3>
-  <img [src]="auth.currentUser.photoURL || 'https://api.adorable.io/avatars/109/fire.png'" width=150px>
+  <h2>Welcome, {{ auth.currentUser.displayName }}</h2>
+  <h3>Welcome to Smart Learning App</h3>
+  <img [src]="auth.currentUser.photoURL || 'https://api.adorable.io/avatars/109/fire.png'" width="150px">
+  <br/>
   <br/>
   <button (click)="logout()">Logout</button>
 </div>

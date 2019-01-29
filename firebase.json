@@ -1,6 +1,6 @@
-{
+ng build --prod{
   "hosting": {
-    "public": "dist/AngularjsApp",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -1,7 +1,7 @@
 
 <!-- User NOT logged in -->
 <div *ngIf="!auth.currentUser">
-  <h3>Hello, {{ auth.currentUserDisplayName }}</h3>
+  <h3>Hell, {{ auth.currentUserDisplayName }}</h3>
   <p>Login to get started...</p>
   <br/>
 </div>
@@ -9,7 +9,7 @@
 <!-- User logged in -->
 <div *ngIf="auth.currentUser">
   <h3>Hello, {{ auth.currentUser.displayName }}</h3>
-  <h3>Welcome to Smart Learning App</h3>
+  <h3>Welcot Learning App</h3>
   <img [src]="auth.currentUser.photoURL || 'https://api.adorable.io/avatars/109/fire.png'" width=150px>
   <br/>
   <button (click)="logout()">Logout</button>
